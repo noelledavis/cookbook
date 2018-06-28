@@ -1,5 +1,6 @@
 # To Do
 - [x] unicode fractions
+- [ ] ingredient class vs ingredient name
 - [ ] webpage integration
 - [ ] only pick up on standard units (cup, lb, tsp, g, etc.) and make option for no unit & measure
 - [ ] framework for ingredient type
@@ -26,3 +27,7 @@
 http://justinmklam.com/posts/2018/04/python-flask-heroku-tutorial/
 
 full code: https://github.com/justinmklam/recipe-converter/blob/master/recipeConverter.py
+
+USDA API: fZyrrP9ayB7j8LWVLHLz63sI8vW2vXOJHrdyJVxD
+
+Edamam API

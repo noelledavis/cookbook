@@ -1,13 +1,16 @@
+import codecs
+
 from ingredient import Ingredient
 import ref
 
 
 class Recipe:
-    def __init__(self):
+    def __init__(self, path):
         self.ingredients = []
-
-    def new_ingredient(self, name, qty, unit):
-        self.ingredients.append(Ingredient(name, qty, unit, ref.kinds, ref.aliases))
+        f = codecs.open(path, 'r', 'utf-8')
+        for line in f:
+            if line.strip():                                # if line not empty
+                self.ingredients.append(Ingredient(line))   # parse line to extract ingredient info
 
     def display(self):
         for kind in ref.kinds:

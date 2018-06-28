@@ -7,7 +7,7 @@ import codecs
 import re
 
 
-def stringtonum(num_str):
+def string2num(num_str):
     """
     There are many ways to write 1.5 as a string:
         1 1/2
@@ -68,7 +68,7 @@ def mixed_num(num):
 if __name__ == "__main__":
     f = codecs.open('data/char.txt', 'r', 'utf-8')
     for line in f:
-        print(line.strip() + '\t->\t' + str(stringtonum(line)))
+        print(line.strip() + '\t->\t' + str(string2num(line)))
 
 """
 working conversion
